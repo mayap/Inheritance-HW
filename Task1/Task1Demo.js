@@ -9,7 +9,7 @@ t8 = new Task("Task 8", 2);
 t9 = new Task("Task 9", 3);
 t10 = new Task("Task 10", 2);
 
-var allWork = new Array(Task);
+var allWork = [];
 
 allWork.addTask(t1);
 allWork.addTask(t2);
@@ -20,5 +20,5 @@ e2 = new Employee("Niki");
 e3 = new Employee("Tina");
 
 while (allWork.length != 0) {
-    e1.startWorkingDay()
+    e1.startWorkingDay();
 }

@@ -1,13 +1,13 @@
 function AllWork() {
-    tasks = new Array(Task);
+    this.tasks = [];
 
     var freePlacesForTasks = 10;
 
     var currentUnassignedTask = 0;
 }
 
-AllWork.prototype.addTask = function (Task) {
-    tasks.push(Task);
+AllWork.prototype.addTask = function (task) {
+    this.tasks.push(task);
     console.log("New task added.");
 };
 

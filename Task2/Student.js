@@ -13,6 +13,9 @@ function Student(name, age, isMale, score) {
     };
 }
 
+Student.prototype = Object.create(Person.prototype);
+Student.prototype.constructor = Student;
+
 Student.prototype.showStudentInfo = function () {
     var personInfo = Person.prototype.showPersonInfo.call(this);
     return personInfo + 'Score: ' + this.getScore();

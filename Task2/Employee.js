@@ -13,6 +13,9 @@ function Employee(name, age, isMale, daySalary) {
     }
 }
 
+Employee.prototype = Object.create(Person.prototype);
+Employee.prototype.constructor = Employee;
+
 Employee.prototype.showEmployeeInfo = function () {
     var personInfo = Person.prototype.showPersonInfo.call(this);
     return personInfo + 'Day Salary: ' + this.getDaySalary();
