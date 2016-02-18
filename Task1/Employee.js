@@ -3,18 +3,11 @@ function Employee(name, currentTask, hoursLeft, allWork) {
     var _name = name;
     var _currentTask = currentTask;
     var _hoursLeft = hoursLeft;
-    var _allWork = tasks;
-    //var _allWork = &tasks;
+    var _allWork = this.tasks;
 
     this.getName = function () {
         return _name;
     };
-
-/*
-    this.setName = function (name) {
-        _name = name;
-    };
-*/
 
     this.getCurrentTask = function () {
         return _currentTask;

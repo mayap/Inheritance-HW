@@ -13,9 +13,9 @@ var employee2 = new Employee('Elena', 30, false, 800);
 
 people.push(person1, person2, student1,student2, employee1, employee2);
 
-var len = people.length;
+var lenArr = people.length;
 
-for (var i = 0; i < len; i++) {
+for (var i = 0; i < lenArr; i++) {
     if (people[i] instanceof Person) {
         people[i].showPersonInfo();
         console.log(people[i].showPersonInfo());
@@ -28,7 +28,7 @@ for (var i = 0; i < len; i++) {
     }
 }
 
-for (i = 0; i < len; i++) {
+for (i = 0; i < lenArr; i++) {
     if (people[i] instanceof Employee) {
         //people[i].calculateOvertime(2);
         console.log(people[i].calculateOvertime(2));

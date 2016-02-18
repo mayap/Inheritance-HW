@@ -6,11 +6,11 @@ function Person(name, age, isMale) {
 
     var _this = this;
 
-    this.getName = function () {
+    this.getNamePerson = function () {
         return _name;
     };
 
-    this.setName = function (name) {
+    this.setNamePerson = function (name) {
         _name = name;
     };
 
@@ -32,5 +32,5 @@ function Person(name, age, isMale) {
 }
 
 Person.prototype.showPersonInfo = function() {
-    return this.getName() + ' is ' + this.getAge() + ' years old and is a ' + (this.getIsMale() ? 'male. ' : 'female. ');
+    return this.getNamePerson() + ' is ' + this.getAge() + ' years old and is a ' + (this.getIsMale() ? 'male. ' : 'female. ');
 };

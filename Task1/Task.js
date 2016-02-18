@@ -6,11 +6,7 @@ function Task(name, workingHours) {
     this.getName = function () {
         return _name;
     };
-/*
-    this.setName = function (name) {
-        _name = name;
-    };
-*/
+
     this.getWorkingHours = function () {
         return _workingHours;
     };
